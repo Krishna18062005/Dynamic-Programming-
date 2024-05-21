@@ -18,7 +18,7 @@ public class Hello {
 		    if(i==0&&j==0) fir=curr;
 		    if(i==0&&j==1) sec=curr;
 		    else if(fir!=curr&&(i==j)) rslt=false;
-		    else if(fir!=curr&&(i==j-N+1)) rslt=false;
+		    else if(fir!=curr&&(N==i+j+1)) rslt=false;
 		    
 		}}
 		System.out.print((checkNonDiag(matri)&&rslt)?"YES":"NO");
